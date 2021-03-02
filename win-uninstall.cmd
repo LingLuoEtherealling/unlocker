@@ -1,13 +1,13 @@
 @echo off
 setlocal ENABLEEXTENSIONS
 echo.
-echo Unlocker 3.0.3 for VMware Workstation
+echo Unlocker 3.0.5 for VMware Workstation
 echo =====================================
-echo (c) Dave Parsons 2011-18
+echo (c) Dave Parsons 2011-2018
 
 net session >NUL 2>&1
 if %errorlevel% neq 0 (
-    echo Administrator privileges required! 
+    echo Administrator privileges required!
     exit
 )
 

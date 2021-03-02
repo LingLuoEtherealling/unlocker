@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "Unlocker 3.0.3 for VMware Workstation"
+echo "Unlocker 3.0.5 for VMware Workstation"
 echo "====================================="
-echo "(c) Dave Parsons 2011-18"
+echo "(c) Dave Parsons 2011-2018"
 
 # Ensure we only use unmodified commands
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
@@ -12,6 +12,14 @@ export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root" 1>&2
    exit 1
+fi
+
+if [ -f /usr/bin/python3 ]; then
+    alias python='/usr/bin/python3'
+    python -V
+else
+    echo "Please install python3 first！"
+    exit 1
 fi
 
 echo Creating backup folder...
@@ -30,7 +38,8 @@ echo Patching...
 python ./unlocker.py
 
 echo Getting VMware Tools...
-python gettools.py
+# VM-Tools for Darwin is ready, Comment next line.
+#python gettools.py
 cp ./tools/darwin*.* /usr/lib/vmware/isoimages/
 
 echo Finished!
