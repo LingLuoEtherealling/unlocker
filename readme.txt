@@ -23,13 +23,13 @@ LINUX USERS: No bundled python for you, but make sure you have python 3.0+ insta
 1. Introduction
 ---------------
 
-Unlocker 3 is designed for VMware Workstation 11-15 and Player 7-15.
+Unlocker 3 is designed for VMware Workstation 11-16 and Player 7-16.
 
 If you are using an earlier product please continue using Unlocker 1.
 
 Version 3 has been tested against:
 
-* Workstation 11/12/14/15 on Windows and Linux
+* Workstation 11/12/14/15/16 on Windows and Linux
 * Workstation Player 7/12/14/15 on Windows and Linux
 
 The patch code carries out the following modifications dependent on the product
@@ -53,7 +53,7 @@ The code is written in Python.
 The code requires Python 2.7 to work. Most Linux distros ship with a compatible
 Python interpreter and should work without requiring any additional software.
 
-Windows Unlocker has a packaged version of the Python script using PyInstaller, 
+Windows Unlocker has a packaged version of the Python script using PyInstaller,
 and so does not require Python to be installed.
 
 3. Limitations
@@ -95,7 +95,7 @@ by running chmod +x against the 2 files.
 lnx-install.sh   - patches VMware
 lnx-uninstall.sh - restores VMware
 lnx-update-tools.sh - retrieves latest macOS guest tools
-   
+
 6. Thanks
 ---------
 
@@ -114,5 +114,6 @@ History
 10/10/18 3.0.2 - Fixed false positives from anti-virus software with Windows executables
                - Allow Python 2 and 3 to run the Python code from Bash scripts
 10/24/19 3.0.3 - Fixed unlocker and gettools for VMware Workstation 15.5
+10/01/20 3.0.5 - VMware Workstation 16 Supported
 
 (c) 2011-2018 Dave Parsons

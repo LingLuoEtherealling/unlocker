@@ -13,13 +13,13 @@
 1. 介绍
 -------
 
-Unlocker 3 适用于 VMware Workstation 11-15 以及 Player 7-15。
+Unlocker 3 适用于 VMware Workstation 11-16 以及 Player 7-16。
 
 如果您正使用早期版本的 VMWare，请继续使用 Unlocker 1。
 
 Unlocker 3 已对以下情况进行了测试：
 
-* 在 Windows 或 Linux 上的 Workstation 11/12/14/15
+* 在 Windows 或 Linux 上的 Workstation 11/12/14/15/16
 * 在 Windows 或 Linux 上的 Workstation Player 7/12/14/15
 
 根据所修补的产品，本代码会作出以下修改：
@@ -101,6 +101,7 @@ lnx-update-tools.sh - 检索最新的用于 Mac OS 的 VMWare Tools
                    载 darwinPre15.iso
 2018/10/10 3.0.2 - 修正了带有 Windows 可执行程序的杀毒软件对本程序的误报
                  - 允许 Python 2 和 3 从 Bash 脚本运行 Python 代码
-2019/10/24 3.0.3 - 修復了適用於VMware Workstation 15.5的解鎖程序和gettools
+2019/10/24 3.0.3 - 修复了适用于 VMware Workstation 15.5 的解锁程序和 gettools
+2020/10/01 3.0.5 - 测试可以支持 VMware Workstation 16，预置了 VM Tools for darwin
 
 (c) 2011-2018 Dave Parsons
